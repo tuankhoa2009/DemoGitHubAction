@@ -1,0 +1,31 @@
+﻿
+
+name: Deploy API Demo
+
+on:
+ workflow_dispatch:
+
+
+jobs:
+  build-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '8.0.x' # Thay phiên bản phù hợp
+
+      - name: Restore dependencies
+        run: dotnet restore ./APIGitHubAction/APIGitHubAction.csproj
+
+      - name: Build application
+        run: dotnet build ./APIGitHubAction/APIGitHubAction.csproj --no-restore --configuration Release
+
+      - name: Publish
+        run: dotnet publish ./APIGitHubAction/APIGitHubAction.csproj --configuration Release --no-build --output ./publish
+
+
