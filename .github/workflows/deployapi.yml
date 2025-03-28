@@ -4,7 +4,9 @@ name: Deploy API Demo
 
 on:
  workflow_dispatch:
-
+ push:
+    branches:
+      - main
 
 jobs:
   build-test:
