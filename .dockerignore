@@ -82,6 +82,8 @@ node_modules/
 *.sln.docstates
 *.userprefs
 
+
+
 # Build results
 [Dd]ebug/
 [Dd]ebugPublic/
@@ -105,3 +107,5 @@ APIGitHubAction/Public/**
 **/~$*.xlsx
 APIGitHubAction/Properties/PublishProfiles/
 APIGitHubAction/Properties/ServiceDependencies/
+
+

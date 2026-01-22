@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APIGitHubAction", "APIGitHubAction\APIGitHubAction.csproj", "{99AB7712-FE0C-482F-8DDF-FFA08A14D789}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "APIGitHubAction", "APIGitHubAction\APIGitHubAction.csproj", "{99AB7712-FE0C-482F-8DDF-FFA08A14D789}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Item solutions", "Item solutions", "{69EF25E4-7705-4840-8E26-A0D866ADCAFC}"
+	ProjectSection(SolutionItems) = preProject
+		.dockerignore = .dockerignore
+		.github\workflows\deployapi.yml = .github\workflows\deployapi.yml
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

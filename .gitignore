@@ -1,0 +1,28 @@
+## Build results
+bin/
+obj/
+
+## Visual Studio
+.vs/
+*.user
+*.suo
+*.cache
+*.log
+
+## Rider / VSCode
+.idea/
+.vscode/
+
+## ASP.NET
+appsettings.Development.json
+
+## OS
+Thumbs.db
+.DS_Store
+
+## NuGet
+*.nupkg
+
+## Others
+*.exe
+*.dll
