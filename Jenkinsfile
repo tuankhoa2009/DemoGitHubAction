@@ -15,12 +15,6 @@ pipeline {
 
     stages {
 
-     
-
-        
-        triggers {
-            githubPush()
-        }
 
         stage('Restore') {
             steps {
