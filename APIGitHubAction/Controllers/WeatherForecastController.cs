@@ -8,7 +8,7 @@ namespace APIGitHubAction.Controllers
     {
         private static readonly string[] Summaries = new[]
         {
-            "KhoaAnGiang", "Dep", "Trai", "Nui", "Cam", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
+            "KhoaAnGiang", "Dep", "Trai", "Nui", "Cam", "2026", "Balmy", "Hot", "Sweltering", "Scorching"
         };
 
         private readonly ILogger<WeatherForecastController> _logger;
