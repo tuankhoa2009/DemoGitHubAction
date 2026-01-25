@@ -15,12 +15,11 @@ pipeline {
 
     stages {
 
-        stage('Checkout Source') {
-            steps {
-                git branch: "${params.Branch_name}",
-                    credentialsId: 'tuankhoa2009',
-                    url: 'https://github.com/tuankhoa2009/DemoGitHubAction.git'
-            }
+     
+
+        
+        triggers {
+            githubPush()
         }
 
         stage('Restore') {
